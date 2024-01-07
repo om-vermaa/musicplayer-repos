@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(1, 3, 12);
+    display: grid;
+    place-items: center;
+}
+
+header{
+    width: 87%;
+    height: 95%;
+    /* border: 1.5px solid rgba(255, 255, 255, 0.493); */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .library_bx,.list_box{
+    width: 23%;
+    height: 89%;
+     /* border: 1px solid rgb(2, 103, 20);   */
+     background-color: rgb(14, 15, 36);  
+     color:white
+     
+}
+
+header .library_bx{
+    width: 77% ;
+    background-color: rgb(3, 14, 14);
+    box-shadow: 5px 0px 8px 3px rgb(7, 14, 1);
+}
+
+header .playhead_bx{
+    box-shadow: 5px 0px 8px 3px rgb(7, 14, 1);
+    width: 100%;
+    height:11% ;
+    background-color: rgb(14, 15, 36);  
+}
+
+header .list_box h2{
+    margin:13px 0px 0px 20px;
+    font-size: 21px;
+    font-weight: 550;
+}
+
+header .list_box .playlist{
+    margin: 30px 0px 0px 20px;  
+}
+
+header .list_box .playlist h4{
+     font-size: 13px;
+     padding-bottom: 5px;
+     font-weight: 400;
+     color: rgb(74, 78, 74);
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     transition: .3s linear;
+}
+
+header .list_box .playlist h4:hover{
+   color: rgb(87, 227, 230);
+}
+
+header .list_box .playlist h4 span{
+    position: relative;
+    margin-right: 34px;
+ }
+
+ header .list_box .playlist h4 span::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 1px solid rgb(54, 108, 53);
+    border-radius: 3px;
+    margin-top: -2px;
+    transition: 0.3s linear;
+ }
+ header .list_box .playlist h4:hover span::before{
+    border: 1.5px solid rgb(21, 175, 177);
+ }
+ header .list_box .playlist h4 .bi{
+display:none;
+ }
+ header .list_box .playlist .active{
+    color:aqua;
+}
+header .list_box .playlist .active span{
+    display:none;
+}
+header .list_box .playlist .active .bi{
+    display: flex;
+    margin-right: 22px;
+}
+header .list_box .song_List{
+    /* border: 1px solid rgb(75, 75, 75);  */
+    width: 100%;
+    height: 61%;
+    margin-top: 17px;
+    overflow: auto;
+}
+header .list_box .song_List::-webkit-scrollbar{
+    display: none;
+}
+header .list_box .song_List li {
+    list-style-type: none;
+    margin:  2px 3px 8px 15px  ;
+    display: flex;
+    align-items: center;
+    position: relative; 
+    font-size: 12px;
+    color: rgb(239, 241, 241);
+    cursor: pointer;
+    
+    /* border: 1px solid white; */
+}
+header .list_box .song_List li:hover{
+    background-color: rgba(36, 36, 36, 0.8);
+    transition: 0.2s linear;
+} 
+header .list_box .song_List li h5{
+    font-weight: bold;
+   margin-left: 7px;
+   /* border: 1px solid white; */
+   width: 130px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+header .list_box .song_List li span{
+   font-family:monospace;
+    font-size: 12px;
+    font-weight: 600;
+}
+header .list_box .song_List li img{
+    width: 30px;
+    height: 30px;
+    margin:0px 3px 0px 25px;
+}
+header .list_box .song_List li i{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
